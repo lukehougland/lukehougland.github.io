@@ -89,7 +89,6 @@ export default {
     outline: 0;
     border: solid 2px $purple;
     background: white;
-    padding: 1rem 1rem;
     border-radius: 50px;
     text-align: center;
     margin: 0 auto;
@@ -98,6 +97,10 @@ export default {
     color: $purple;
     font-size: 1rem;
     transition: all 0.25s ease-in-out;
+    padding: 1rem 0;
+    @include breakpoint('phone'){
+      padding: 1rem 1rem;
+    }
     &:link, &:active, &:hover, &:visited{
       outline: none;
       text-decoration: none;
