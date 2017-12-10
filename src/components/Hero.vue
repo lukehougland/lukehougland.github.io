@@ -88,7 +88,7 @@ export default {
   }
   &__cta{
     display: block;
-    max-width: 260px;
+    max-width: 280px;
     outline: 0;
     border: solid 2px $purple;
     background: white;
