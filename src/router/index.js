@@ -7,7 +7,7 @@ Vue.use(Router);
 export default new Router({
   mode: 'history',
   routes: [
-    { path: '/', component: App, redirect: '/mortgage' },
+    { path: '/', component: App, alias: '/mortgage' },
   ],
 
 });
