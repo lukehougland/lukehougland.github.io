@@ -1,0 +1,26 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:500,700');
+$lato: 'Lato', sans-serif; // 400, 700
+$montserrat: 'Montserrat', sans-serif; // 500, 700
+
+// Colors
+$dark-grey: #3B3B3B;
+$purple: #374DDE;
+$light-purple: #F5F6FD;
+$medium-purple: #7383E8;
+
+$shadow-grey: rgba(0, 0, 0, 0.05);
+$box-shadow: 0px 0px 25px $shadow-grey;
+
+// Responsive
+@mixin breakpoint($point) {
+@if $point == phone {
+  @media (min-width: 680px) { @content; }
+ }
+@if $point == tablet {
+  @media (min-width: 768px) { @content; }
+ }
+ @if $point == desktop {
+   @media (min-width: 1024px) { @content; }
+  }
+}
