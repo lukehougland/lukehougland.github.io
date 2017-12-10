@@ -8,7 +8,7 @@
     <section class="h">
       <div class="h__heading-container">
         <h1 class="h__heading">{{translations.hero.heading}}</h1>
-        <button class="h__cta">{{translations.hero.cta}}</button>
+        <a class="h__cta" v-scroll-to="'#contact'">{{translations.hero.cta}}</a>
       </div>
     </section>
   </div>
@@ -74,7 +74,10 @@ export default {
     color: $dark-grey;
     font-family: $montserrat;
     font-weight: 500;
-    margin: 10rem auto 4rem auto;
+    margin: 10rem auto 2rem auto;
+    @include breakpoint('tablet'){
+      margin: 10rem auto 4rem auto;
+    }
     &-container{
       min-height: 420px;
       margin: 1rem;
@@ -82,6 +85,7 @@ export default {
   }
   &__cta{
     display: block;
+    max-width: 260px;
     outline: 0;
     border: solid 2px $purple;
     background: white;
@@ -94,6 +98,10 @@ export default {
     color: $purple;
     font-size: 1rem;
     transition: all 0.25s ease-in-out;
+    &:link, &:active, &:hover, &:visited{
+      outline: none;
+      text-decoration: none;
+    }
     &:hover{
       background: $purple;
       border: solid 2px darken($purple, 10%);

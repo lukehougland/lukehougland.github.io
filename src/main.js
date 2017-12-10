@@ -6,6 +6,9 @@ import Es6Promise from 'es6-promise';
 // IE 11
 Es6Promise.polyfill();
 
+const  VueScrollTo = require('vue-scrollto');
+Vue.use(VueScrollTo)
+
 import Vue from 'vue';
 import App from './App';
 import router from './router';

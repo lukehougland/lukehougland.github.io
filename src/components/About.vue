@@ -1,5 +1,5 @@
 <template>
-  <div class="a">
+  <div class="a" id="contact">
     <div class="a__container">
       <div class="a__about">
         <div class="a__about__face">
