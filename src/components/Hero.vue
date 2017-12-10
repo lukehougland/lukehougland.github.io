@@ -89,7 +89,6 @@ export default {
     outline: 0;
     border: solid 2px $purple;
     background: white;
-    padding: 1rem 2rem;
     border-radius: 50px;
     text-align: center;
     margin: 0 auto;
