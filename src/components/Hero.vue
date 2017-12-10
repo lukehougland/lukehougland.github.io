@@ -80,7 +80,10 @@ export default {
     }
     &-container{
       min-height: 420px;
-      margin: 1rem;
+      margin: 1rem 0.25rem;
+      @include breakpoint('phone'){
+        margin: 1rem;
+      }
     }
   }
   &__cta{
@@ -97,10 +100,7 @@ export default {
     color: $purple;
     font-size: 1rem;
     transition: all 0.25s ease-in-out;
-    padding: 1rem 0;
-    @include breakpoint('phone'){
-      padding: 1rem 1rem;
-    }
+    padding: 1rem 1rem;
     &:link, &:active, &:hover, &:visited{
       outline: none;
       text-decoration: none;
