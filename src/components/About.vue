@@ -7,7 +7,7 @@
         </div>
         <div class="a__about__info">
           <h2 class="a__about__info__name">Luke Hougland</h2>
-          <p class="a__about__info__title">Loan Officer</p>
+          <p class="a__about__info__title">Loan Officer NMLS #1600704</p>
           <div class="a__about__info__contact">
             <a href="tel:+19134490687">(913) 449-0687</a>
             <a href="mailto:lhougland@myamcap.com">lhougland@myamcap.com</a>
