@@ -21,14 +21,18 @@
         </div>
       </div>
       <div class="a__links">
-        <a class="a__links__regular" href="https://www.myamcap.com/lukehougland/">Apply Online</a>
+        <a class="a__links__regular" href="https://www.myamcap.com/lukehougland/">Pre-Qualify Online</a>
         <a class="a__links__ghost" href="https://itunes.apple.com/us/app/amcap-loan-alert/id833057336?mt=8">Download the app</a>
       </div>
       <ul class="a__social">
-        <li class="a__social__item"><a href="https://www.facebook.com/lhougland"><img src="../assets/facebook.svg"/></a></li>
+        <li class="a__social__item"><a href="https://www.facebook.com/LukeHouglandMortgage/"><img src="../assets/facebook.svg"/></a></li>
         <li class="a__social__item"><a href="https://www.instagram.com/Luke.houg.land/"><img src="../assets/instagram.svg"/></a></li>
         <li class="a__social__item"><a href="https://twitter.com/wuke20"><img src="../assets/twitter.svg"/></a></li>
       </ul>
+      <ul class="a__eho">
+        <li class="a__eho__item"><a href="http://www.nmlsconsumeraccess.org/"><img src="../assets/eho.png"/></a></li>
+      </ul>
+      <p class="a__eho-text">AmCap Mortgage, Ltd. <a href="http://www.nmlsconsumeraccess.org">(NMLS ID# 129122)</a> is an Equal Housing Lender.</p>
     </div>
   </div>
 </template>
@@ -174,6 +178,41 @@ export default {
       img{
         height: 40px;
         width: 40px;
+      }
+    }
+  }
+  &__eho{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    &__item{
+      list-style-type: none;
+      margin: 0.5rem;
+      img{
+        height: 60px;
+        width: 60px;
+      }
+    }
+  }
+  &__eho-text{
+    font-family: $lato;
+    text-align: center;
+    max-width: 768px;
+    padding: 0 2rem;
+    line-height: 2rem;
+    a{
+      color: $dark-grey;
+      margin: 0 0.25rem;
+      transition: all 0.25s ease-in-out;
+      &:link, &:visited, &:hover, &:active{
+        font-family: $lato;
+        border-bottom:thin dashed $dark-grey;
+        padding-bottom:0.5rem;
+        text-decoration: none;
+      }
+      &:hover{
+        color: $medium-purple;
+        border-bottom:thin dashed $medium-purple;
       }
     }
   }

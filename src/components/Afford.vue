@@ -20,13 +20,14 @@
           </div>
         </div>
       </div>
+      <p class="a__calculate__disclaimer">*This mortgage calculator does not guarantee any loan term. Get an official loan estimate to qualify for terms/rates.</p>
+
     </div>
     <div class="a__result">
       <div class="a__result__payment">
         <p class="a__result__payment__description">{{translations.afford.monthlyPayments}}</p>
         <p class="a__result__payment__value">${{calculatedMonthlyPayments}}</p>
       </div>
-    
     </div>
   </div>
 </template>
@@ -80,6 +81,19 @@ export default {
     padding: 2rem;
     flex: 1 0 calc(70% - 4rem);
     background: $light-purple;
+    &__disclaimer{
+      font-family: $lato;
+      padding: 2rem;
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: center;
+      @include breakpoint('phone'){
+        max-width: 100%;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+      }
+    }
     &__heading{
       font-size: 1.25rem;
       font-family: $montserrat;
