@@ -21,7 +21,7 @@
         </div>
       </div>
       <div class="a__links">
-        <a class="a__links__regular" href="https://www.myamcap.com/lukehougland/">Pre-Qualify Online</a>
+        <a class="a__links__regular" href="https://7858038077.mortgage-application.net/WebApp/ShortApp.aspx?oempage=1">Pre-Qualify Online</a>
         <a class="a__links__ghost" href="https://itunes.apple.com/us/app/amcap-loan-alert/id833057336?mt=8">Download the app</a>
       </div>
       <ul class="a__social">
